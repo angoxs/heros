@@ -28,9 +28,9 @@ export default function User() {
           <path
             d='M6.5 12H17.5M17.5 12L12.9118 8M17.5 12L12.9118 16'
             stroke='#3B71FE'
-            stroke-width='1.5'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeWidth='1.5'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
         </svg>
       </div>

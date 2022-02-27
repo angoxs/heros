@@ -6,7 +6,7 @@ export default function Header() {
     <section className={cn("section-header")}>
       <div className={cn("container", styles.container)}>
         <p className={cn("body-bold logo", styles.logo)}>
-          Mis <span>fans</span>
+          Mis <span>heros</span>
         </p>
         <button className={cn("hi", styles.button)}>👋</button>
       </div>

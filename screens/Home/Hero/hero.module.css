@@ -10,7 +10,7 @@
 .wrapper {
   display: grid;
   grid-gap: 32px;
-  margin-top: 32px;
+  margin-top: 48px;
 }
 
 .title {
@@ -48,11 +48,5 @@
     font-size: 48px;
     line-height: (56/48);
     letter-spacing: -0.02em;
-  }
-
-  .subtitle {
-    font-size: 16px;
-    line-height: (24/16);
-    font-weight: 300;
   }
 }

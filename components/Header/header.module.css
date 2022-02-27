@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #f4f5f6;
+}
+
+.button:hover {
+  background-color: #3a6ff8;
+}
+
+.logo {
+  color: #23262f;
+  font-family: "Outfit", sans-serif;
+}
+
+.logo span {
+  background: #23262f;
+  color: #fcfcfd;
+  padding: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}

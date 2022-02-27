@@ -1,0 +1,80 @@
+[class~="button"] {
+  font-size: 16px;
+  line-height: 1;
+  width: 220px;
+  height: 60px;
+  background-color: var(--shark);
+  color: var(--romance);
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button svg {
+  stroke: var(--romance);
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button:hover svg {
+  background: var(--romance);
+  stroke: var(--shark);
+}
+
+.button-stroke {
+  width: 100%;
+  height: 60px;
+  border: 2px solid #e6e8ec;
+  background-color: transparent;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+  color: var(--shark);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button-stroke:hover {
+  border: 2px solid var(--shark);
+}
+
+.button-small {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--waterloo);
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button-small:hover {
+  transform: scale(1.03);
+  color: var(--shark);
+}
+
+.button-small:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 428px) {
+  .button {
+    width: 100%;
+  }
+}

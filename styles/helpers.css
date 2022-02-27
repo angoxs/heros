@@ -1,0 +1,105 @@
+/* colors */
+
+:root {
+  --background: #fcfcfd;
+  --text-primary: #23262f;
+  --text-secondary: #777e90;
+  --ultramarineblue: #3b71fe;
+  --emerald: #58c27d;
+  --white-smoke: #f4f5f6;
+}
+
+/* typography */
+
+.body {
+  font-size: 24px;
+  line-height: (32/24);
+  font-weight: 300;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+.body-bold {
+  font-size: 24px;
+  line-height: (32/24);
+  font-weight: 400;
+  color: (var--text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+.body-2 {
+  font-size: 16px;
+  line-height: (24/16);
+  font-weight: 300;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+.body-2-bold {
+  font-size: 16px;
+  line-height: (24/16);
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: (24/14);
+  font-weight: 300;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+.caption-bold {
+  font-size: 14px;
+  line-height: (24/14);
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+.caption-2 {
+  font-size: 12px;
+  line-height: (20/12);
+  font-weight: 300;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+.caption-2-bold {
+  font-size: 12px;
+  line-height: (20/12);
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+.hairline {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+.hairline-2 {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+.button-default {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.button-2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  line-height: (16/14);
+  font-weight: 700;
+}

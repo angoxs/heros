@@ -1,0 +1,15 @@
+.app {
+    border: 2px solid #f4f5f6;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app svg {
+    width: 24px;
+    height: 24px;
+    fill: #23262f;
+  }

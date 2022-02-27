@@ -1,0 +1,9 @@
+/* common styles */
+@import "./helpers.css";
+
+/* global classes */
+@import "./blocks/title.css";
+@import "./blocks/container.css";
+@import "./blocks/section.css";
+@import "./blocks/button.css";
+@import "./blocks/apps.css"

@@ -1,0 +1,36 @@
+
+.writings_title {
+    animation: fade 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 8px;
+}
+
+.writings_container {
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+.writings_content {
+  margin-bottom: 48px;
+}
+
+.writings_button {
+padding: 10px 18px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .writings_title {
+    font-size: 48px;
+    line-height: (56/48);
+    margin-bottom: 8px;
+  }
+}

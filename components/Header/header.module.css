@@ -15,10 +15,11 @@
   border: none;
   outline: none;
   background-color: #f4f5f6;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .button:hover {
-  background-color: #3a6ff8;
+  border: 2px solid #3a6ff8;
 }
 
 .logo {

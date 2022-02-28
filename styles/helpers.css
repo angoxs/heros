@@ -22,7 +22,7 @@
 .body-bold {
   font-size: 24px;
   line-height: (32/24);
-  font-weight: 400;
+  font-weight: 500;
   color: (var--text-secondary);
   font-family: "Inter", sans-serif;
 }
@@ -108,6 +108,18 @@
   .body {
     font-size: 16px;
     line-height: (24/16);
+    font-weight: 300;
+  }
+
+  .body-bold {
+    font-size: 16px;
+    line-height: (24/16);
+    font-weight: 500;
+  }
+
+  .caption {
+    font-size: 12px;
+    line-height: (20/12);
     font-weight: 300;
   }
 }

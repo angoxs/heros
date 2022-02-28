@@ -69,5 +69,6 @@
 
   .content {
     grid-template-columns: 60px auto;
+    grid-gap: 12px;
   }
 }

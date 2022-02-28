@@ -27,11 +27,12 @@ export default function Hero({ id, picture, firstName, lastName }) {
         </Link>
         <div className={styles.image_container}>
           <img className={styles.image} src='/example.jpg' />
-          <div className={styles.profile}>
-            <img className={styles.avatar} src='/04.png' />
-            <h4 className={cn("body-bold")}>Alex Ramirez</h4>
-            <p className={cn("caption")}>Mr</p>
-          </div>
+        </div>
+
+        <div className={styles.profile}>
+          <img className={styles.avatar} src='/04.png' />
+          <h4 className={cn("body-bold")}>Alex Ramirez</h4>
+          <p className={cn("caption")}>Mr</p>
         </div>
       </div>
     </div>

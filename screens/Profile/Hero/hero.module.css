@@ -14,9 +14,10 @@
 }
 
 .profile {
-  position: absolute;
-  margin-top: 80px;
   text-align: center;
+  margin: -45px auto;
+  width: 100%;
+  position: absolute;
 }
 
 .avatar {
@@ -26,7 +27,6 @@
   border: 4px solid #fcfcfd;
   box-sizing: border-box;
   border-radius: 60px;
-
   background-color: #fcfcfd;
 }
 

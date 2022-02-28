@@ -1,32 +1,38 @@
 import Layout from "../../components/Layout";
-import { users } from "../../data";
 import { loadUsers } from "../../lib/fetch-post";
 import { Hero } from "../../screens/Profile";
 
 export const getStaticProps = async ({ params }) => {
-  const user = await loadUsers(`${params.id}`);
+  const { response } = await fetch(
+    `https://dummyapi.io/data/v1/user/${params.id}`
+  );
+  const post = await response.json();
 
   return {
     props: {
-      user,
+      post,
     },
   };
 };
 
 export const getStaticPaths = async () => {
-  const users = await loadUsers();
+  const response = await fetch(`https://dummyapi.io/data/v1/user/`);
+  const users = await response.json();
 
   const paths = users.map((user) => ({
     params: { id: user.id },
   }));
 
-  return { paths, fallback: false };
+  return {
+    paths,
+    fallback: false,
+  };
 };
 
 export default function Users({ user }) {
   return (
     <Layout>
-      <Hero {...user} id={user.id} />
+      <Hero {...user} id={post.id} />
     </Layout>
   );
 }

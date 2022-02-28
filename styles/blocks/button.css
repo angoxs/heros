@@ -30,39 +30,3 @@
   background: var(--romance);
   stroke: var(--shark);
 }
-
-.button-stroke {
-  width: 100%;
-  height: 60px;
-  border: 2px solid #e6e8ec;
-  background-color: transparent;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "Outfit", sans-serif;
-  color: var(--shark);
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.button-stroke:hover {
-  border: 2px solid var(--shark);
-}
-
-.button-small {
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--waterloo);
-  font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.button-small:hover {
-  transform: scale(1.03);
-  color: var(--shark);
-}
-
-.button-small:active {
-  transform: scale(0.98);
-}

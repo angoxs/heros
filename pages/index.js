@@ -6,13 +6,15 @@ import User from "../components/User";
 import styles from "../styles/Home.module.css";
 import cn from "classnames";
 
-export const getStaticProps = () => {
+export async function getStaticProps() {
+  // const users = await loadUsers();
+
   return {
     props: {
       userList: users,
     },
   };
-};
+}
 
 export default function Home({ userList }) {
   return (

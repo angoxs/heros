@@ -1,19 +1,23 @@
 import Layout from "../../components/Layout";
 import { users } from "../../data";
+import { loadUsers } from "../../lib/fetch-post";
 import { Hero } from "../../screens/Profile";
 
 export const getStaticProps = async ({ params }) => {
-  const userList = users.filter((p) => p.id.toString() === params.id);
+  const user = await loadUsers(`${params.id}`);
+
   return {
     props: {
-      user: userList[0],
+      user,
     },
   };
 };
 
 export const getStaticPaths = async () => {
+  const users = await loadUsers();
+
   const paths = users.map((user) => ({
-    params: { id: user.id.toString() },
+    params: { id: user.id },
   }));
 
   return { paths, fallback: false };

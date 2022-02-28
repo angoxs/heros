@@ -1,25 +1,19 @@
 [class~="button"] {
-  font-size: 16px;
-  line-height: 1;
-  width: 220px;
-  height: 60px;
-  background-color: var(--shark);
-  color: var(--romance);
-  font-weight: bold;
-  font-family: "Outfit", sans-serif;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  padding: 0 32px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #f4f5f6;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .button:hover {
-  opacity: 0.9;
+  border: 2px solid #3a6ff8;
 }
 
 .button:active {

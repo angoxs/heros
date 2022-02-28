@@ -8,7 +8,7 @@ export default function Header() {
         <p className={cn("body-bold logo", styles.logo)}>
           Mis <span>heros</span>
         </p>
-        <button className={cn("hi", styles.button)}>👋</button>
+        <button className={cn("button")}>👋</button>
       </div>
     </section>
   );

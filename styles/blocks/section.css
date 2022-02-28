@@ -35,6 +35,10 @@
     padding: 48px 0;
   }
 
+  .section-pb {
+    padding-bottom: 0;
+  }
+
   .section-hero {
     padding-top: 90px;
     padding-bottom: 0;

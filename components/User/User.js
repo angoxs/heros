@@ -1,20 +1,20 @@
 import styles from "./user.module.css";
 import cn from "classnames";
 
-export default function User() {
+export default function User(props) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <img
           className={styles.avatar}
-          src='/1. Asian Man.png'
+          src={props.image}
           width='60px'
           height='60px'
         />
 
         <div className={styles.text_wrapper}>
-          <h2 className={cn("body-bold")}>Alex Ramirez</h2>
-          <p className={cn("caption")}>CEO - Misfans</p>
+          <h2 className={cn("body-bold")}>{props.name}</h2>
+          <p className={cn("caption")}>{props.position}</p>
         </div>
       </div>
       <div className={styles.svg_container}>

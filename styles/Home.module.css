@@ -1,12 +1,6 @@
-.wrapper {
+.users_wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 32px;
-  margin-bottom: 48px;
-}
-
-@media (max-width: 768px) {
-  .wrapper {
-    grid-template-columns: auto;
-  }
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
 }

@@ -7,6 +7,10 @@
 }
 
 .section-pb {
+  padding-bottom: 48px;
+}
+
+.section-pt {
   padding-top: 0;
 }
 

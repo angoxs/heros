@@ -66,9 +66,3 @@
 .button-small:active {
   transform: scale(0.98);
 }
-
-@media (max-width: 428px) {
-  .button {
-    width: 100%;
-  }
-}

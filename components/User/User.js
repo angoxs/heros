@@ -24,7 +24,7 @@ export default function User({
 
             <div className={styles.text_wrapper}>
               <h2 className={cn("body-bold")}>{`${firstName} ${lastName}`}</h2>
-              <p className={cn("caption")}>{title}</p>
+              <p className={cn("caption")}>{title}.</p>
             </div>
           </div>
           <div className={styles.svg_container}>

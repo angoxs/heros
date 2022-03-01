@@ -104,6 +104,7 @@
 @media (max-width: 428px) {
   .section {
     margin: -90px auto;
+    margin-bottom: 24px;
   }
 
   .image_container {

@@ -67,6 +67,10 @@
   padding: 12px;
 }
 
+.container {
+  margin-bottom: 90px;
+}
+
 .post_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -36,7 +36,7 @@
   position: relative;
   padding: 60px;
   box-shadow: 0px 40px 32px rgba(15, 15, 15, 0.1);
-  border-radius: 24px;
+  border-radius: 12px;
   background-color: white;
   animation: fade 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
@@ -55,14 +55,13 @@
 }
 
 @media (max-width: 768px) {
- 
 }
 
 @media (max-width: 512px) {
   .content {
     padding: 40px;
   }
-  
+
   .h1 {
     font-size: 48px;
     line-height: (56/48);

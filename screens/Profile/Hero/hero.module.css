@@ -71,4 +71,10 @@
   .image_container {
     height: 220px;
   }
+
+  .info_grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 12px;
+  }
 }

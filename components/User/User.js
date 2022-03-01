@@ -1,6 +1,7 @@
 import styles from "./user.module.css";
 import cn from "classnames";
 import Link from "next/link";
+import capitalize from "../../helpers/Capitalize";
 
 export default function User({
   id,
@@ -24,7 +25,8 @@ export default function User({
 
             <div className={styles.text_wrapper}>
               <h2 className={cn("body-bold")}>{`${firstName} ${lastName}`}</h2>
-              <p className={cn("caption")}>{title}.</p>
+
+              <p className={cn("caption")}>{capitalize(title)}.</p>
             </div>
           </div>
           <div className={styles.svg_container}>

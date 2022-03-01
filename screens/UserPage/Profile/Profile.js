@@ -3,6 +3,7 @@ import cn from "classnames";
 import Link from "next/link";
 import Post from "../../../components/Post";
 import Image from "next/image";
+import capitalize from "../../../helpers/Capitalize";
 
 export default function Profile({
   id,
@@ -53,7 +54,7 @@ export default function Profile({
             <h4 className={cn("body-bold")}>
               {firstName} {lastName}
             </h4>
-            <p className={cn("caption")}>{title}</p>
+            <p className={cn("caption")}>{capitalize(title)}.</p>
           </div>
 
           <div className={styles.info_wrapper}>

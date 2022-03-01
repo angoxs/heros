@@ -1,26 +1,12 @@
 import Layout from "../../components/Layout";
+import { getAllUserIds, getAllUserPost } from "../../lib/fetch-post";
 import { Profile } from "../../screens/UserPage";
-
-const endpoint = "https://dummyapi.io/data/v1/user";
-const appId = "621b899337e9039ef45290cd";
 
 export async function getServerSideProps({ query }) {
   const { id } = query;
 
-  const response = await fetch(`${endpoint}/${id}`, {
-    headers: {
-      "app-id": appId,
-    },
-  });
-
-  const postResponse = await fetch(`${endpoint}/${id}/post?limit=10`, {
-    headers: {
-      "app-id": appId,
-    },
-  });
-
-  const data = await response.json();
-  const posts = await postResponse.json();
+  const data = await getAllUserIds({ id });
+  const posts = await getAllUserPost({ id });
 
   return {
     props: {

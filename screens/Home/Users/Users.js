@@ -3,11 +3,11 @@ import styles from "./users.module.css";
 import User from "../../../components/User";
 import { motion } from "framer-motion";
 
-export default function Users({ userList }) {
+export default function Users({ users }) {
   return (
     <div className={cn("section section-pt", styles.section)}>
       <div className={styles.users_wrapper}>
-        {userList.map((user) => (
+        {users.map((user) => (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

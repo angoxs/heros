@@ -67,6 +67,12 @@
   padding: 12px;
 }
 
+.post_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+
 @media (max-width: 428px) {
   .image_container {
     height: 220px;
@@ -76,5 +82,11 @@
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-gap: 12px;
+  }
+
+  .post_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 32px;
   }
 }

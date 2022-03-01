@@ -1,6 +1,7 @@
 import styles from "./hero.module.css";
 import cn from "classnames";
 import Link from "next/link";
+import Post from "../../../components/Post";
 
 export default function Hero({
   id,
@@ -15,6 +16,7 @@ export default function Hero({
   location,
   gender,
   text,
+  posts,
 }) {
   return (
     <div className={cn("")}>
@@ -62,6 +64,14 @@ export default function Hero({
             <p className={cn("caption-2", styles.text)}>
               Member since {registerDate}
             </p>
+          </div>
+
+          <div className={cn("container", styles.container)}>
+            <div className={styles.post_grid}>
+              {posts.map((post) => (
+                <Post {...post} id={post.id} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

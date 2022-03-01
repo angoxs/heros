@@ -46,7 +46,7 @@ export default function Profile({
         ))}
       </div>
 
-      <div className={cn("section section-pt section-pb", styles.section)}>
+      <div className={cn("section section-pt", styles.section)}>
         <div className={styles.container}>
           <img className={styles.avatar} src={picture} />
           <div className={styles.name}>

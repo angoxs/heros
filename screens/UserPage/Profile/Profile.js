@@ -134,7 +134,7 @@ export default function Profile({
             </div>
 
             <p className={cn("caption-2", styles.date_text)}>
-              Member since {registerDate}
+              Member since <Date dateString={registerDate} />
             </p>
           </div>
 

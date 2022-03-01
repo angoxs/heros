@@ -48,7 +48,7 @@ export default function Profile({
       </div>
 
       <div className={cn("section section-pt", styles.section)}>
-        <div className={styles.container}>
+        <div className={cn("container", styles.container)}>
           <img className={styles.avatar} src={picture} />
           <div className={styles.name}>
             <h4 className={cn("body-bold")}>
@@ -138,12 +138,10 @@ export default function Profile({
             </p>
           </div>
 
-          <div className={cn("container", styles.container)}>
-            <div className={styles.post_grid}>
-              {posts.map((post) => (
-                <Post {...post} id={post.id} tags={post.tags} />
-              ))}
-            </div>
+          <div className={styles.post_grid}>
+            {posts.map((post) => (
+              <Post {...post} id={post.id} tags={post.tags} />
+            ))}
           </div>
         </div>
       </div>

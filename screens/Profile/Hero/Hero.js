@@ -14,6 +14,7 @@ export default function Hero({
   dateOfBirth,
   location,
   gender,
+  text,
 }) {
   return (
     <div className={cn("")}>

@@ -5,7 +5,7 @@
   align-items: flex-end;
   justify-content: center;
   position: relative;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 
 .image {

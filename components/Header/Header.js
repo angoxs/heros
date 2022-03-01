@@ -1,8 +1,20 @@
 import styles from "./header.module.css";
 import cn from "classnames";
 import Link from "next/link";
+import { useState } from "react";
+import Modal from "../Modal";
 
 export default function Header() {
+  const [modal, setModal] = useState(false);
+
+  const closeModal = () => {
+    setModal(false);
+  };
+
+  const openModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <section className={cn("section-header")}>
       <div className={cn("container", styles.container)}>
@@ -14,8 +26,18 @@ export default function Header() {
           </a>
         </Link>
 
-        <button className={cn("button")}>👋</button>
+        <button className={cn("button")} onClick={openModal}>
+          👋
+        </button>
       </div>
+
+      {modal ? (
+        <section className={styles.background}>
+          <div className={styles.align}>
+            <Modal closeModal={closeModal} setModal={setModal} />
+          </div>
+        </section>
+      ) : null}
     </section>
   );
 }

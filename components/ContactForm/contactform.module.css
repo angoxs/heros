@@ -1,0 +1,63 @@
+.form {
+  margin-top: 32px;
+  display: grid;
+  grid-gap: 8px;
+}
+
+.input_wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 8px;
+}
+
+.input {
+  color: #23262f;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  padding: 18px;
+  border: 2px solid #e6e8ec;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.textarea {
+  color: #23262f;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  padding: 18px;
+  border: 2px solid #e6e8ec;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.input::placeholder {
+  color: #697080;
+}
+
+.input:hover {
+  border: 2px solid #23262f;
+}
+
+.input:active {
+  border: 2px solid #23262f;
+}
+
+.textarea::placeholder {
+  color: #697080;
+}
+
+.textarea:hover {
+  border: 2px solid #23262f;
+}
+
+.textarea:active {
+  border: 2px solid #23262f;
+}
+
+@media (max-width: 768px) {
+  .input_wrapper {
+    grid-template-columns: auto;
+  }
+}

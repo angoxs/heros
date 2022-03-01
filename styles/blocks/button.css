@@ -20,6 +20,27 @@
   transform: scale(0.95);
 }
 
+.form-button {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #3b71fe;
+  color: #fcfcfd;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+}
+
+.form-button:hover {
+  opacity: 0.9;
+}
+
 .button svg {
   stroke: var(--romance);
   border-radius: 50%;

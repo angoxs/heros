@@ -2,7 +2,7 @@ import styles from "./hero.module.css";
 import cn from "classnames";
 import Link from "next/link";
 
-export default function Hero({ id, picture, firstName, lastName }) {
+export default function Hero({ id, picture, title, firstName, lastName }) {
   return (
     <div className={cn("")}>
       <div>
@@ -29,10 +29,12 @@ export default function Hero({ id, picture, firstName, lastName }) {
           <img className={styles.image} src='/example.jpg' />
         </div>
 
-        <div className={styles.profile}>
-          <img className={styles.avatar} src='/04.png' />
-          <h4 className={cn("body-bold")}>Alex Ramirez</h4>
-          <p className={cn("caption")}>Mr</p>
+        <div className={styles.profile} key={id}>
+          <img className={styles.avatar} src={picture} />
+          <h4 className={cn("body-bold")}>
+            {firstName} {lastName}
+          </h4>
+          <p className={cn("caption")}>{title}</p>
         </div>
       </div>
     </div>

@@ -1,38 +1,51 @@
 import Layout from "../../components/Layout";
-import { loadUsers } from "../../lib/fetch-post";
+import { getAllUserIds, loadUsers } from "../../lib/fetch-post";
 import { Hero } from "../../screens/Profile";
 
-export const getStaticProps = async ({ params }) => {
-  const { response } = await fetch(
-    `https://dummyapi.io/data/v1/user/${params.id}`
-  );
-  const post = await response.json();
+// export const getStaticPaths = async () => {
+//   const paths = await getAllUserIds();
+
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
+
+// export const getStaticProps = async ({ params }) => {
+//   const response = await fetch(`https://dummyapi.io/data/v1/user/${params.id}`);
+//   const userData = await response.json();
+
+//   return {
+//     props: {
+//       userData,
+//     },
+//   };
+// };
+
+const endpoint = "https://dummyapi.io/data/v1/user/";
+
+export async function getServerSideProps({ query }) {
+  const { id } = query;
+  const response = await fetch(`${endpoint}/${id}`, {
+    headers: {
+      "app-id": "621b899337e9039ef45290cd",
+    },
+  });
+  const data = await response.json();
 
   return {
     props: {
-      post,
+      data,
     },
   };
-};
+}
 
-export const getStaticPaths = async () => {
-  const response = await fetch(`https://dummyapi.io/data/v1/user/`);
-  const users = await response.json();
+export default function Users({ data }) {
+  console.log(data);
 
-  const paths = users.map((user) => ({
-    params: { id: user.id },
-  }));
-
-  return {
-    paths,
-    fallback: false,
-  };
-};
-
-export default function Users({ user }) {
   return (
     <Layout>
-      <Hero {...user} id={post.id} />
+      <Hero {...data} id={data.id} />
     </Layout>
   );
 }

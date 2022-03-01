@@ -5,6 +5,7 @@
   align-items: flex-end;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .image {

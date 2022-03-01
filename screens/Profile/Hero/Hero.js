@@ -2,6 +2,7 @@ import styles from "./hero.module.css";
 import cn from "classnames";
 import Link from "next/link";
 import Post from "../../../components/Post";
+import Image from "next/image";
 
 export default function Hero({
   id,
@@ -41,7 +42,9 @@ export default function Hero({
           </a>
         </Link>
         <div className={styles.image_container}>
-          <img className={styles.image} src='/example.jpg' />
+          {posts.map((post) => (
+            <img className={styles.image} src={post.image} />
+          ))}
         </div>
 
         <div className={styles.profile} key={id}>

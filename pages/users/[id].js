@@ -1,6 +1,5 @@
 import Layout from "../../components/Layout";
-import Post from "../../components/Post";
-import { Hero } from "../../screens/Profile";
+import { Profile } from "../../screens/UserPage";
 
 const endpoint = "https://dummyapi.io/data/v1/user";
 const appId = "621b899337e9039ef45290cd";
@@ -37,8 +36,8 @@ export default function Users({ data, posts }) {
 
   return (
     <Layout>
-      <Hero {...data} posts={posts} id={data.id} />
       {/* {JSON.stringify(posts)} */}
+      <Profile {...data} posts={posts} id={data.id} />
     </Layout>
   );
 }

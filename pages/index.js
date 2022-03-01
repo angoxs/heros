@@ -28,7 +28,7 @@ export default function Home({ userList }) {
     <Layout>
       <Hero />
       {/* {JSON.stringify(userList)} */}
-      <div className={cn("section section-pt")}>
+      <div className={cn("section section-pt", styles.section)}>
         <div className={styles.users_wrapper}>
           {userList.map((user) => (
             <User key={user.id} {...user} />

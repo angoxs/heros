@@ -1,10 +1,10 @@
-import styles from "./hero.module.css";
+import styles from "./profile.module.css";
 import cn from "classnames";
 import Link from "next/link";
 import Post from "../../../components/Post";
 import Image from "next/image";
 
-export default function Hero({
+export default function Profile({
   id,
   picture,
   title,
@@ -20,34 +20,34 @@ export default function Hero({
   posts,
 }) {
   return (
-    <div className={cn("")}>
-      <div>
-        <Link href='/'>
-          <a className={cn("button", styles.button)}>
-            <svg
-              width='24'
-              height='24'
-              viewBox='0 0 24 24'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                d='M17.5 12L6.5 12M6.5 12L11.0882 16M6.5 12L11.0882 8'
-                stroke='#363853'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-              />
-            </svg>
-          </a>
-        </Link>
-        <div className={styles.image_container}>
-          {posts.map((post) => (
-            <img className={styles.image} src={post.image} />
-          ))}
-        </div>
+    <>
+      <Link href='/'>
+        <a className={cn("button", styles.button)}>
+          <svg
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              d='M17.5 12L6.5 12M6.5 12L11.0882 16M6.5 12L11.0882 8'
+              stroke='#363853'
+              stroke-width='1.5'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            />
+          </svg>
+        </a>
+      </Link>
+      <div className={styles.image_container}>
+        {posts.map((post) => (
+          <img className={styles.image} src={post.image} />
+        ))}
+      </div>
 
-        <div className={styles.profile} key={id}>
+      <div className={cn("section section-pt section-pb", styles.section)}>
+        <div className={styles.container}>
           <img className={styles.avatar} src={picture} />
           <div className={styles.name}>
             <h4 className={cn("body-bold")}>
@@ -57,7 +57,7 @@ export default function Hero({
           </div>
 
           <div className={styles.info_wrapper}>
-            <div className={styles.info_grid}>
+            <div className={styles.cells_grid}>
               <p className={cn("caption-bold", styles.info)}>
                 {" "}
                 <svg
@@ -132,7 +132,7 @@ export default function Hero({
               </p>
             </div>
 
-            <p className={cn("caption-2", styles.text)}>
+            <p className={cn("caption-2", styles.date_text)}>
               Member since {registerDate}
             </p>
           </div>
@@ -146,6 +146,6 @@ export default function Hero({
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

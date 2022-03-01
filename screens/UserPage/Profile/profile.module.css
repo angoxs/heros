@@ -1,7 +1,8 @@
 .section {
-  position: absolute;
   width: 100%;
   margin: -45px auto;
+  position: relative;
+  z-index: 9;
 }
 
 .container {
@@ -20,6 +21,7 @@
   justify-content: center;
   position: relative;
   overflow-x: scroll;
+  z-index: 1;
 }
 
 .image {

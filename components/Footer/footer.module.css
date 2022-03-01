@@ -1,0 +1,14 @@
+.section {
+  border-top: 1px solid #e6e8ec;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}

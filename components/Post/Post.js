@@ -35,7 +35,7 @@ export default function Post({ id, text, image, publishDate, likes, tags }) {
         <div className={styles.wrapper}>
           <div className={styles.tags}>
             {tags.map((tag) => (
-              <p className={styles.tag}>{tag}</p>
+              <p className={cn("caption-bold", styles.tag)}>{tag}</p>
             ))}
           </div>
         </div>

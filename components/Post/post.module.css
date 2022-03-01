@@ -71,6 +71,8 @@
   padding: 8px;
   background: #f4f5f6;
   border-radius: 6px;
+  color: #23262f;
+  border: 1px solid #e6e8ec;
 }
 
 @media (max-width: 428px) {

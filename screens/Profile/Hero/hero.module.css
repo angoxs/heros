@@ -18,6 +18,9 @@
   margin: -45px auto;
   width: 100%;
   position: absolute;
+  display: grid;
+  grid-gap: 12px;
+  justify-items: center;
 }
 
 .avatar {
@@ -34,6 +37,34 @@
   position: fixed;
   bottom: 20px;
   left: 20px;
+  z-index: 9999;
+}
+
+.name {
+  display: grid;
+  grid-gap: 4px;
+  margin-bottom: 16px;
+}
+
+.info_wrapper {
+  margin-bottom: 48px;
+}
+
+.text {
+  margin-top: 16px;
+}
+
+.info_grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 12px;
+}
+
+.info {
+  border: 1px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 12px;
 }
 
 @media (max-width: 428px) {

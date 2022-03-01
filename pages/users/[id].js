@@ -22,7 +22,6 @@ export default function Users({ data, posts }) {
 
   return (
     <Layout>
-      {/* {JSON.stringify(posts)} */}
       <Profile {...data} posts={posts} id={data.id} />
     </Layout>
   );

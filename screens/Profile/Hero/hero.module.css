@@ -79,7 +79,7 @@
 
 @media (max-width: 768px) {
   .info_grid {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .post_grid {

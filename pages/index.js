@@ -1,9 +1,6 @@
 import Layout from "../components/Layout";
-import { Hero } from "../screens/Home";
+import { Hero, Users } from "../screens/Home";
 import { loadUsers } from "../lib/fetch-post";
-import User from "../components/User";
-import styles from "../styles/Home.module.css";
-import cn from "classnames";
 
 export async function getStaticProps() {
   const response = await fetch(`https://dummyapi.io/data/v1/user?limit=10`, {
@@ -27,14 +24,7 @@ export default function Home({ userList }) {
   return (
     <Layout>
       <Hero />
-      {/* {JSON.stringify(userList)} */}
-      <div className={cn("section section-pt", styles.section)}>
-        <div className={styles.users_wrapper}>
-          {userList.map((user) => (
-            <User key={user.id} {...user} />
-          ))}
-        </div>
-      </div>
+      <Users userList={userList} />
     </Layout>
   );
 }

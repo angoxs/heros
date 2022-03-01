@@ -1,0 +1,10 @@
+.section {
+  padding-top: 48px;
+}
+
+.users_wrapper {
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}

@@ -2,8 +2,10 @@ import Layout from "../components/Layout";
 import { Hero, Users } from "../screens/Home";
 import { loadUsers } from "../lib/fetch-post";
 
+const endpoint = "https://dummyapi.io/data/v1/user";
+
 export async function getStaticProps() {
-  const response = await fetch(`https://dummyapi.io/data/v1/user?limit=10`, {
+  const response = await fetch(`${endpoint}?limit=10`, {
     headers: {
       "app-id": "621b899337e9039ef45290cd",
     },
@@ -18,13 +20,13 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ userList }) {
+export default function Home({ userList, endpoint }) {
   console.log(userList);
 
   return (
     <Layout>
       <Hero />
-      <Users userList={userList} />
+      <Users userList={userList} endpoint={endpoint} />
     </Layout>
   );
 }

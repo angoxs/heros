@@ -51,7 +51,7 @@
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.container:hover .svg_container {
+/* .container:hover .svg_container {
   border: 2px solid #3a6ff8;
 }
 
@@ -69,8 +69,8 @@
 
 .container:nth-child(3) {
   animation: fadeIn 4.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
+} */
+/* 
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -81,7 +81,7 @@
     opacity: 1;
     transform: translateY(0px);
   }
-}
+} */
 
 @media (max-width: 428px) {
   .container {

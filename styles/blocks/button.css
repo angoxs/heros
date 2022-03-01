@@ -8,12 +8,13 @@
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: #f4f5f6;
+  background-color: #fcfcfd;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid #3a6ff8;
 }
 
 .button:hover {
-  border: 2px solid #3a6ff8;
+  background: #3a6ff8;
   transform: scale(1.1);
 }
 
@@ -21,15 +22,16 @@
   transform: scale(0.9);
 }
 
+.button:hover svg {
+  fill: #fcfcfd;
+  stroke: #fcfcfd;
+}
+
 .button svg {
   fill: #3b71fe;
   stroke: #3b71fe;
   border-radius: 50%;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.button:hover svg {
-  stroke: #3b71fe;
 }
 
 .form-button {

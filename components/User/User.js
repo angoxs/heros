@@ -29,7 +29,7 @@ export default function User({
               <p className={cn("caption")}>{capitalize(title)}.</p>
             </div>
           </div>
-          <div className={styles.svg_container}>
+          <button className={cn("button", styles.svg_container)}>
             <svg
               width='24'
               height='24'
@@ -39,13 +39,12 @@ export default function User({
             >
               <path
                 d='M6.5 12H17.5M17.5 12L12.9118 8M17.5 12L12.9118 16'
-                stroke='#3B71FE'
                 strokeWidth='1.5'
                 strokeLinecap='round'
                 strokeLinejoin='round'
               />
             </svg>
-          </div>
+          </button>
         </div>
       </a>
     </Link>

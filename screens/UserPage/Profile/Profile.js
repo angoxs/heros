@@ -33,10 +33,9 @@ export default function Profile({
           >
             <path
               d='M17.5 12L6.5 12M6.5 12L11.0882 16M6.5 12L11.0882 8'
-              stroke='#363853'
-              stroke-width='1.5'
-              stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeWidth='1.5'
+              strokeLinecap='round'
+              strokeLinejoin='round'
             />
           </svg>
         </a>

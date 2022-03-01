@@ -1,7 +1,6 @@
 .close_button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: -25px;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -39,10 +38,5 @@
     font-size: 48px;
     line-height: (56/48);
     letter-spacing: -0.02em;
-  }
-
-  .close_button {
-    top: 10px;
-    right: 10px;
   }
 }

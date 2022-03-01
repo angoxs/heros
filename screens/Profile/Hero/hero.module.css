@@ -62,7 +62,6 @@
 }
 
 .info {
-  color: #23262f;
   border: 1px solid #e6e8ec;
   box-sizing: border-box;
   border-radius: 10px;
@@ -71,8 +70,12 @@
   grid-template-columns: auto auto;
   align-items: center;
   justify-content: center;
-
   grid-gap: 8px;
+}
+
+.info:hover {
+  border: 1px solid #23262f;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .container {

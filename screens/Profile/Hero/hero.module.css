@@ -73,20 +73,26 @@
   grid-gap: 32px;
 }
 
+@media (max-width: 768px) {
+  .info_grid {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .post_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 428px) {
   .image_container {
     height: 220px;
   }
 
   .info_grid {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-gap: 12px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .post_grid {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 32px;
   }
 }

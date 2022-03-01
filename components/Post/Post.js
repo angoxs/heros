@@ -1,4 +1,5 @@
 import cn from "classnames";
+import capitalize from "../../helpers/Capitalize";
 import styles from "./post.module.css";
 
 export default function Post({ id, text, image, publishDate, likes, tags }) {
@@ -30,7 +31,7 @@ export default function Post({ id, text, image, publishDate, likes, tags }) {
       </div>
       <div className={styles.content}>
         <p className={cn("caption-2")}>{publishDate}</p>
-        <h4 className={cn("body-bold", styles.title)}>{text}</h4>
+        <h4 className={cn("body-bold", styles.title)}>{capitalize(text)}</h4>
 
         <div className={styles.wrapper}>
           <div className={styles.tags}>

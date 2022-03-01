@@ -14,21 +14,22 @@
 
 .button:hover {
   border: 2px solid #3a6ff8;
+  transform: scale(1.1);
 }
 
 .button:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 .button svg {
-  stroke: var(--romance);
+  fill: #3b71fe;
+  stroke: #3b71fe;
   border-radius: 50%;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .button:hover svg {
-  background: var(--romance);
-  stroke: var(--shark);
+  stroke: #3b71fe;
 }
 
 .form-button {

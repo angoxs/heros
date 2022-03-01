@@ -2,34 +2,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.close_button svg {
-  width: 44px;
-  height: 44px;
-  stroke: #697080;
-  stroke-width: 1px;
-}
-
-.close_button:hover {
-  transform: scale(1.1);
-}
-
-.close_button:active {
-  transform: scale(0.9);
-}
-
-.close_button svg:hover {
-  stroke: #23262f;
-}
-
-.emoji {
-  margin-left: 4px;
 }
 
 .content {
@@ -66,11 +39,6 @@
     font-size: 48px;
     line-height: (56/48);
     letter-spacing: -0.02em;
-  }
-
-  .logo {
-    font-size: 24px;
-    line-height: 24px;
   }
 
   .close_button {

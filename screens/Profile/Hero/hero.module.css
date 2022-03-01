@@ -62,10 +62,17 @@
 }
 
 .info {
+  color: #23262f;
   border: 1px solid #e6e8ec;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 12px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+
+  grid-gap: 8px;
 }
 
 .container {

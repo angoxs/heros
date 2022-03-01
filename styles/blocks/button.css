@@ -8,7 +8,12 @@
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: #fcfcfd;
+  background: linear-gradient(
+    83.59deg,
+    #fcfcfd 36.52%,
+    rgba(252, 252, 253, 0.83) 98.8%
+  );
+  box-shadow: 0px 20px 44px -12px rgba(15, 15, 15, 0.2);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border: 2px solid #3a6ff8;
 }

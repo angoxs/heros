@@ -10,6 +10,7 @@ export default function Footer() {
           <a
             href='https://vazurio.co'
             target='_blank'
+            rel='noreferrer'
             style={{ textDecoration: "underline", fontWeight: "bold" }}
           >
             Vazurio

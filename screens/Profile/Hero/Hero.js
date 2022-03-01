@@ -69,7 +69,7 @@ export default function Hero({
           <div className={cn("container", styles.container)}>
             <div className={styles.post_grid}>
               {posts.map((post) => (
-                <Post {...post} id={post.id} />
+                <Post {...post} id={post.id} tags={post.tags} />
               ))}
             </div>
           </div>

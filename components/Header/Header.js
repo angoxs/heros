@@ -3,6 +3,7 @@ import cn from "classnames";
 import Link from "next/link";
 import { useState } from "react";
 import Modal from "../Modal";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
   const [modal, setModal] = useState(false);
@@ -34,7 +35,15 @@ export default function Header() {
       {modal ? (
         <section className={styles.background}>
           <div className={styles.align}>
-            <Modal closeModal={closeModal} setModal={setModal} />
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0, y: 60 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Modal closeModal={closeModal} setModal={setModal} />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </section>
       ) : null}

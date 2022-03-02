@@ -22,6 +22,7 @@
 }
 
 .textarea {
+  width: 100%;
   color: #23262f;
   font-size: 18px;
   font-family: "Outfit", sans-serif;

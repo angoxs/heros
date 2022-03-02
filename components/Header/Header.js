@@ -39,7 +39,7 @@ export default function Header() {
               <motion.div
                 initial={{ opacity: 0, y: 60 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.2, type: "tween" }}
+                transition={{ linear: [0.17, 0.67, 0.83, 0.67] }}
               >
                 <Modal closeModal={closeModal} setModal={setModal} />
               </motion.div>

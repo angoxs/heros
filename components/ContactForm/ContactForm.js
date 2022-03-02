@@ -74,19 +74,6 @@ export default function ContactForm() {
             disabled={state.submitting}
           >
             Submit
-            <svg
-              width='24'
-              height='24'
-              viewBox='0 0 24 24'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                d='M6.5 12H17.5M17.5 12L12.9118 8M17.5 12L12.9118 16'
-                strokeWidth='1.5'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-              />
-            </svg>
           </button>
         </motion.div>
       </form>

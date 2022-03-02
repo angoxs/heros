@@ -25,6 +25,9 @@
 }
 
 .input {
+  font-size: 14px !important;
+  line-height: (24/14);
+  font-weight: 300;
   width: 320px;
   padding: 18px 42px;
   border: 2px solid #f4f5f6;

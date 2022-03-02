@@ -3,7 +3,15 @@ import capitalize from "../../helpers/Capitalize";
 import Date from "../Date";
 import styles from "./post.module.css";
 
-export default function Post({ id, text, image, publishDate, likes, tags }) {
+export default function Post({
+  id,
+  text,
+  image,
+  publishDate,
+  likes,
+  owner,
+  tags,
+}) {
   console.log(tags);
   return (
     <div className={styles.container}>

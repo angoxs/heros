@@ -16,7 +16,7 @@ export default function Home({ users, endpoint }) {
   console.log(users);
 
   return (
-    <Layout>
+    <Layout title='Home'>
       <Hero />
       <Users users={users} endpoint={endpoint} />
     </Layout>

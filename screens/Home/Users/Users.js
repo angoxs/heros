@@ -24,7 +24,7 @@ export default function Users({ users }) {
       <div className={styles.users_wrapper}>
         <div className={styles.label}>
           <input
-            className={cn("caption-bold", styles.input)}
+            className={cn("caption", styles.input)}
             onChange={inputHandler}
             placeholder='Search Users'
             type='text'

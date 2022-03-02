@@ -33,6 +33,7 @@
   border-radius: 8px;
   color: #23262f;
   outline: none;
+  border-style: solid;
 }
 
 .input:hover {

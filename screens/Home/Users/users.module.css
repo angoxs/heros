@@ -42,3 +42,9 @@
 .input::placeholder {
   color: #777e90;
 }
+
+@media (max-width: 428px) {
+  .input {
+    width: 100%;
+  }
+}

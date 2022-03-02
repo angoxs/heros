@@ -163,7 +163,12 @@ export default function Profile({
 
           <div className={styles.post_grid}>
             {posts.map((post) => (
-              <motion.div variants={item}>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
                 <Post {...post} id={post.id} tags={post.tags} />
               </motion.div>
             ))}

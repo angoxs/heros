@@ -37,9 +37,10 @@ export default function Header() {
           <div className={styles.align}>
             <AnimatePresence>
               <motion.div
-                initial={{ opacity: 0, y: 60 }}
+                initial={{ opacity: 0, y: 90 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ linear: [0.17, 0.67, 0.83, 0.67] }}
+                transition={{ type: "spring", bounce: 0.25 }}
+                exit={{ y: 90 }}
               >
                 <Modal closeModal={closeModal} setModal={setModal} />
               </motion.div>

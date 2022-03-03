@@ -3,6 +3,7 @@ import styles from "./users.module.css";
 import User from "../../../components/User";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import SearchBar from "../../../components/SearchBar";
 
 export default function Users({ users }) {
   const [inputText, setInputText] = useState("");
@@ -22,14 +23,7 @@ export default function Users({ users }) {
   return (
     <div className={cn("section section-pt", styles.section)}>
       <div className={styles.users_wrapper}>
-        <div className={styles.label}>
-          <input
-            className={cn("caption", styles.input)}
-            onChange={inputHandler}
-            placeholder='Search Heros'
-            type='text'
-          />
-        </div>
+        <SearchBar inputHandler={inputHandler} />
 
         {filteredData.map((user) => (
           <motion.div

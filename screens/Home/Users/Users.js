@@ -26,7 +26,7 @@ export default function Users({ users }) {
           <input
             className={cn("caption", styles.input)}
             onChange={inputHandler}
-            placeholder='Search Users'
+            placeholder='Search Heros'
             type='text'
           />
         </div>
